@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Scent | Premium Perfumes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --aura-cream: #FAF9F6;
+            --aura-beige: #F5F1ED;
+            --aura-nude: #E8D8C4;
+            --aura-brown: #5C4D42;
+            --aura-brown-dark: #3E332C;
+            --aura-rose: #A67C74;
+            --aura-blush: #FCE7EB;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--aura-cream);
+            color: var(--aura-brown);
+        }
+        h1, h2, h3, h4, .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .luxury-shadow {
+            box-shadow: 0 10px 40px -10px rgba(92, 77, 66, 0.1);
+        }
+        .bg-aura-cream { background-color: var(--aura-cream); }
+        .bg-aura-beige { background-color: var(--aura-beige); }
+        .bg-aura-nude { background-color: var(--aura-nude); }
+        .bg-aura-blush { background-color: var(--aura-blush); }
+        .text-aura-brown { color: var(--aura-brown); }
+        .text-aura-rose { color: var(--aura-rose); }
+        .border-aura-nude { border-color: var(--aura-nude); }
+        
+        .btn-luxury-brown {
+            background: linear-gradient(135deg, var(--aura-brown) 0%, var(--aura-brown-dark) 100%);
+            color: white;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 15px rgba(92, 77, 66, 0.2);
+        }
+        .btn-luxury-brown:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+            box-shadow: 0 8px 25px rgba(92, 77, 66, 0.3);
+        }
+        .btn-luxury-brown:active {
+            transform: translateY(1px);
+        }
+
+        .animate-fadeIn {
+            animation: fadeIn 1.2s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.40.0"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
